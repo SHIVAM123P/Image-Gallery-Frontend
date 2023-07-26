@@ -38,7 +38,7 @@ function App() {
     formData.append('image', e.target.files[0]);
 
     try {
-      const response = await fetch('http://localhost:8080/uploadImage', {
+      const response = await fetch('https://image-gallery-5wjq.onrender.com/uploadImage', {
         method: 'POST',
         body: formData,
       });
@@ -58,7 +58,7 @@ function App() {
 
   const fetchGalleryImages = async () => {
     try {
-      const response = await fetch('http://localhost:8080/getImages');
+      const response = await fetch('https://image-gallery-5wjq.onrender.com/getImages');
       if (response.ok) {
         const { images } = await response.json();
         // Construct complete image data with imageURL and imageID
@@ -83,7 +83,7 @@ function App() {
       const validImageId = images[index]._id;
 
       // Use 'validImageId' in the PUT request URL
-      const response = await axios.put(`http://localhost:8080/toggleLike/${validImageId}`);
+      const response = await axios.put(`https://image-gallery-5wjq.onrender.com/toggleLike/${validImageId}`);
       if (response.status === 200) {
         const { liked } = response.data;
         const updatedImages = [...images];
@@ -117,7 +117,7 @@ function App() {
 
   const fetchLikedImages = async () => {
     try {
-      const response = await fetch('http://localhost:8080/getLikedImages');
+      const response = await fetch('https://image-gallery-5wjq.onrender.com/getLikedImages');
       if (response.ok) {
         const { likedImages } = await response.json();
         const completeImageData = likedImages.map((imageObj) => ({
@@ -268,7 +268,7 @@ function App() {
   const handleAddToAlbumBackendCall = async (albumNameOrId, image) => {
     try {
       // Make a POST request to your backend API with the selected album name or ID and image ID
-      const response = await axios.post(`http://localhost:8080/handleAddToAlbum/${image._id}`, {
+      const response = await axios.post(`https://image-gallery-5wjq.onrender.com/handleAddToAlbum/${image._id}`, {
         albumName: albumNameOrId,
       });
 

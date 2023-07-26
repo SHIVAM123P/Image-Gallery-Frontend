@@ -1,7 +1,14 @@
+
+
 .App {
   text-align: center;
 }
 
+
+
+#showMore-button:hover {
+  background-color: #0056b3;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -116,12 +123,13 @@ img {
 #viewGallery{
   position: relative;
   left: 30px;
+  background-color: #61dafb;
 }
 
 #viewLikedImages{
-  position: relative;
-  left: 60px;
-  bottom: 15px;
+  position: absolute;
+  bottom: 590px;
+  right: 390px;
 }
 /* App.css */
 
@@ -227,3 +235,41 @@ img {
 }
 
 /* ... Your other styles ... */
+
+/* Custom styles for the download icon container */
+.download-icon-container {
+  position: absolute;
+  top: 10px; /* Adjust the value to change the vertical position */
+  right: 175px; /* Adjust the value to change the horizontal position */
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Styles for the download icon */
+.download-icon {
+  font-size: 20px; /* Adjust the size of the download icon */
+  color: #ccc; /* Color of the download icon */
+}
+
+.share-icon-container {
+  position: absolute;
+  top: 220px;
+  right: 85px;
+  display: flex;
+  gap: 5px;
+}
+
+/* Styles for the "Show More" button */
+#showMore {
+  /* position: relative;
+  left:700px; */
+}
+#uploadButton{
+  margin-bottom: 10px;
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+}
+
+#uploadButton-image:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}

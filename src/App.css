@@ -131,9 +131,7 @@ img {
   bottom: 590px;
   right: 390px;
 }
-/* App.css */
 
-/* ... (other styles) ... */
 
 /* Custom styles for the image cards */
 #cards, #likedcards {
@@ -174,9 +172,6 @@ img {
   height: 100%; /* Ensure the image maintains its aspect ratio */
   object-fit: cover; /* Scale the image to cover the entire container while preserving aspect ratio */
 }
-
-/* App.css */
-/* ... Your other styles ... */
 
 .modal-container {
   position: fixed;
@@ -234,7 +229,6 @@ img {
   color: #000;
 }
 
-/* ... Your other styles ... */
 
 /* Custom styles for the download icon container */
 .download-icon-container {
@@ -259,11 +253,7 @@ img {
   gap: 5px;
 }
 
-/* Styles for the "Show More" button */
-#showMore {
-  /* position: relative;
-  left:700px; */
-}
+
 #uploadButton{
   margin-bottom: 10px;
   background-color: #007bff; /* Blue color */
